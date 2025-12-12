@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Dashboard – iDoctor</title>
+    <link rel="stylesheet" href="styles/dashboard.css">
+</head>
+
+<body>
+
+<div class="sidebar">
+    <h2 class="logo">iDoctor</h2>
+    <ul>
+        <li><a href="dashboard.html" class="active">Dashboard</a></li>
+        <li><a href="doctor-management.html">Doctors</a></li>
+        <li><a href="medicine-management.html">Medicines</a></li>
+        <li><a id="logoutBtn">Logout</a></li>
+    </ul>
+</div>
+
+<div class="main-content">
+    <h1>Admin Dashboard</h1>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Total Doctors</h3>
+            <p id="doctorCount">0</p>
+        </div>
+
+        <div class="card">
+            <h3>Total Medicines</h3>
+            <p id="medicineCount">0</p>
+        </div>
+
+        <div class="card">
+            <h3>Today's Predictions</h3>
+            <p id="predictCount">0</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Recent Activity</h2>
+        <div class="placeholder-box">API Data Will Load Here</div>
+    </div>
+</div>
+
+<script src="js/dashboard.js"></script>
+</body>
+</html>

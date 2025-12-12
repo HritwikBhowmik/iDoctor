@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>iDoctor</title>
+
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- Chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="public/styles/style.css">
+</head>
+
+<body class="bg-gray-900 text-gray-100 font-inter relative">
+
+<!-- Matrix Background Animation -->
+<div class="matrix-container fixed top-0 left-0 w-full h-full">
+  <div class="matrix-pattern">
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+  </div>
+  <div class="matrix-pattern">
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+  </div>
+  <div class="matrix-pattern">
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+  </div>
+  <div class="matrix-pattern">
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+  </div>
+  <div class="matrix-pattern">
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+    <div class="matrix-column"></div>
+  </div>
+</div>
+
+<div class="max-w-6xl mx-auto p-6 space-y-8 relative z-10">
+
+  <!-- Header -->
+  <header class="text-center mb-6">
+    <h1 class="text-4xl font-bold text-cyan-400 tracking-wide animated-title">iDoctor</h1>
+    <p class="text-gray-400 mt-1">AI-Powered Skin Lesion Detection & Medical Assistance</p>
+  </header>
+
+  <!-- Upload & Prediction Card -->
+  <section class="bg-gray-800 rounded-2xl shadow-lg p-6 relative hover:shadow-blue-500/50 transition futuristic-card">
+    <h2 class="text-xl font-semibold mb-4 text-center glow-text">Upload Skin Image</h2>
+
+    <!-- Drag-and-Drop Zone -->
+    <div id="dropZone" class="neon-border relative p-8 text-center cursor-pointer transition-all duration-300 rounded-xl overflow-hidden group">
+      <div class="absolute inset-0 bg-gradient-to-r from-cyan-500/0 via-cyan-500/20 to-cyan-500/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 animate-pulse"></div>
+      <div class="relative z-10">
+        <div class="icon-wrapper mb-4 inline-block">
+          <svg class="w-16 h-16 text-cyan-400 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path>
+          </svg>
+        </div>
+        <p class="text-lg font-semibold text-cyan-300 drop-text">Drag & drop an image here</p>
+        <p class="mt-2 text-sm text-gray-400">or click to select a file</p>
+      </div>
+      <input type="file" id="fileInput" accept="image/*" class="hidden">
+    </div>
+
+    <!-- Image Preview -->
+    <div id="previewContainer" class="relative mt-6 hidden">
+      <div class="preview-wrapper mx-auto w-72 h-72 relative">
+        <div class="absolute inset-0 bg-gradient-to-r from-cyan-500 to-purple-500 rounded-xl opacity-0 blur group-hover:opacity-75 transition-opacity duration-300 animate-pulse" style="animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;"></div>
+        <img id="preview" class="relative w-full h-full object-cover rounded-xl border-2 border-cyan-400/50 shadow-lg shadow-cyan-500/50 preview-image" />
+      </div>
+    </div>
+
+    <!-- Predict Button -->
+    <button id="predictBtn"
+            class="mt-6 w-full cyber-button relative py-3 rounded-lg font-semibold transition-all duration-300 group">
+      <span class="relative z-10 flex items-center justify-center gap-2">
+        <span>Analyze</span>
+        <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+        </svg>
+      </span>
+    </button>
+
+    <!-- 3D Spinner Loader -->
+    <div id="loading" class="spinner hidden">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <!-- Result -->
+    <!-- Result -->
+    <div id="result" class="mt-6 hidden glass-result-card p-4 rounded-xl shadow-lg">
+    <h3 class="text-lg font-bold mb-1 text-cyan-300">Predicted Result</h3>
+    <p id="predictionText" class="text-base mb-1"></p>
+    <!-- Progress bar will be inserted dynamically -->
+    </div>
+
+    <!-- Error Box -->
+    <div id="errorBox" class="hidden mt-4 p-3 bg-red-600 rounded-lg text-white text-sm"></div>
+  </section>
+
+  <!-- Doctor Data Card -->
+  <section id="doctorCard" class="glass-card rounded-2xl shadow-lg p-6 hover:shadow-green-500/50 transition">
+    <h2 class="text-xl font-semibold mb-4 text-green-300">Doctor Information</h2>
+    <div id="doctorData" class="space-y-2">
+      <p class="text-gray-400">Under construction...</p>
+    </div>
+  </section>
+
+  <!-- Medicine Data Card -->
+  <section id="medicineCard" class="glass-card rounded-2xl shadow-lg p-6 hover:shadow-yellow-500/50 transition">
+    <h2 class="text-xl font-semibold mb-4 text-yellow-300">Medicine Information</h2>
+    <div id="medicineData" class="space-y-2">
+      <p class="text-gray-400">Under construction...</p>
+    </div>
+  </section>
+
+  <!-- LLM Advice Card -->
+  <section id="llmCard" class="glass-card rounded-2xl shadow-lg p-6 hover:shadow-purple-500/50 transition">
+    <h2 class="text-xl font-semibold mb-4 text-purple-300">AI Advice</h2>
+    <div id="llmData" class="space-y-2">
+      <p class="text-gray-400">Under construction...</p>
+    </div>
+  </section>
+
+</div>
+
+<script src="public/js/app.js"></script>
+</body>
+</html>

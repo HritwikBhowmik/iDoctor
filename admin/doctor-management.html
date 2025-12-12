@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Doctor Management – iDoctor</title>
+    <link rel="stylesheet" href="styles/dashboard.css">
+</head>
+
+<body>
+
+<div class="sidebar">
+    <h2 class="logo">iDoctor</h2>
+    <ul>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="doctor-management.html" class="active">Doctors</a></li>
+        <li><a href="medicine-management.html">Medicines</a></li>
+        <li><a id="logoutBtn">Logout</a></li>
+    </ul>
+</div>
+
+<div class="main-content">
+    <h1>Doctor Management</h1>
+
+    <button class="add-btn" onclick="openDoctorModal()">Add Doctor</button>
+
+    <table class="styled-table">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Specialty</th>
+            <th>cures_disease</th>
+            <th>location</th>
+            <th>Phone</th>
+            <th>Email</th>
+            <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody id="doctorTableBody"></tbody>
+    </table>
+</div>
+
+<!-- Modal -->
+<div id="doctorModal" class="modal hidden">
+    <div class="modal-content">
+        <h2 id="modalTitle">Add Doctor</h2>
+
+        <div class="uiverse-pixel-input-wrapper">
+            <label class="uiverse-pixel-label" for="docName">NAME</label>
+            <input id="docName" placeholder="Enter name..." class="uiverse-pixel-input" type="text" />
+        </div>
+
+        <div class="uiverse-pixel-input-wrapper">
+            <label class="uiverse-pixel-label" for="docSpecialty">SPECIALTY</label>
+            <input id="docSpecialty" placeholder="Enter specialty..." class="uiverse-pixel-input" type="text" />
+        </div>
+
+        <div class="uiverse-pixel-input-wrapper">
+            <label class="uiverse-pixel-label" for="docCuresDisease">CURES DISEASE</label>
+            <input id="docCuresDisease" placeholder="Enter disease..." class="uiverse-pixel-input" type="text" />
+        </div>
+
+        <div class="uiverse-pixel-input-wrapper">
+            <label class="uiverse-pixel-label" for="docLocation">LOCATION</label>
+            <input id="docLocation" placeholder="Enter location..." class="uiverse-pixel-input" type="text" />
+        </div>
+
+        <div class="uiverse-pixel-input-wrapper">
+            <label class="uiverse-pixel-label" for="docPhone">PHONE</label>
+            <input id="docPhone" placeholder="Enter phone..." class="uiverse-pixel-input" type="text" />
+        </div>
+
+        <div class="uiverse-pixel-input-wrapper">
+            <label class="uiverse-pixel-label" for="docEmail">EMAIL</label>
+            <input id="docEmail" placeholder="Enter email..." class="uiverse-pixel-input" type="email" />
+        </div>
+
+        <button class="btn" onclick="saveDoctor()">Save</button>
+        <button class="btn" onclick="closeDoctorModal()">Cancel</button>
+    </div>
+</div>
+
+<script src="js/doctor-manage.js"></script>
+</body>
+</html>

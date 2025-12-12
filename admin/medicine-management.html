@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Medicine Management – iDoctor</title>
+    <link rel="stylesheet" href="styles/dashboard.css">
+</head>
+
+<body>
+
+<div class="sidebar">
+    <h2 class="logo">iDoctor</h2>
+    <ul>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="doctor-management.html">Doctors</a></li>
+        <li><a href="medicine-management.html" class="active">Medicines</a></li>
+        <li><a id="logoutBtn">Logout</a></li>
+    </ul>
+</div>
+
+<div class="main-content">
+    <h1>Medicine Management</h1>
+
+    <button class="add-btn" onclick="openMedicineModal()">Add Medicine</button>
+
+    <table class="styled-table">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>For Disease</th>
+            <th>Price</th>
+            <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody id="medicineTableBody"></tbody>
+    </table>
+</div>
+
+<!-- Modal -->
+<div id="medicineModal" class="modal hidden">
+    <div class="modal-content">
+        <h2 id="modalTitle">Add Medicine</h2>
+
+        <div class="uiverse-pixel-input-wrapper">
+            <label class="uiverse-pixel-label" for="medName">NAME</label>
+            <input id="medName" placeholder="Enter name..." class="uiverse-pixel-input" type="text" />
+        </div>
+
+        <div class="uiverse-pixel-input-wrapper">
+            <label class="uiverse-pixel-label" for="medDisease">FOR DISEASE</label>
+            <input id="medDisease" placeholder="Enter disease..." class="uiverse-pixel-input" type="text" />
+        </div>
+
+        <div class="uiverse-pixel-input-wrapper">
+            <label class="uiverse-pixel-label" for="medPrice">PRICE</label>
+            <input id="medPrice" placeholder="Enter price..." class="uiverse-pixel-input" type="number" />
+        </div>
+
+        <button class="btn" onclick="saveMedicine()">Save</button>
+        <button class="btn" onclick="closeMedicineModal()">Cancel</button>
+    </div>
+</div>
+
+<script src="js/medicine-manage.js"></script>
+</body>
+</html>
