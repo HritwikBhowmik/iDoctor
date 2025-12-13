@@ -17,4 +17,6 @@ RUN chmod -R 755 /app/instance
 
 EXPOSE 5666
 
-CMD ["gunicorn", "-w", "4", "-b", "0.0.0.0:5666", "--timeout", "120", "--access-logfile", "-", "wsgi:application"]
+# CMD ["gunicorn", "-w", "4", "-b", "0.0.0.0:5666", "--timeout", "120", "--access-logfile", "-", "wsgi:application"]
+CMD ["python", "app.py"]
+

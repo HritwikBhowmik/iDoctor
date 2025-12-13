@@ -6,8 +6,8 @@
 // const PREDICTION_API = 'http://192.168.0.104:5665/prediction';
 
 // global api
-const API_BASE_URL = 'http://103.174.51.212';
-const PREDICTION_API = 'http://103.174.51.212/ml/prediction';
+const API_BASE_URL = 'http://103.174.51.212:5666';
+const PREDICTION_API = 'http://103.174.51.212:5665/prediction';
 
 // ========================
 // Global Variables
