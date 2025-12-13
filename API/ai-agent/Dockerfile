@@ -9,4 +9,4 @@ COPY . .
 
 EXPOSE 5665
 
-CMD ["python", "app.py"]
+CMD ["gunicorn", "-w", "1", "-b", "0.0.0.0:5665", "--timeout", "300", "--access-logfile", "-", "--error-logfile", "-", "app:app"]
