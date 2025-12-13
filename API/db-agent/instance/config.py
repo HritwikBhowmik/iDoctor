@@ -1,11 +1,14 @@
 # backend/instance/config.py
+import os
 
 # Secret keys
 SECRET_KEY = "this_is_a_long_random_secret"
 JWT_SECRET_KEY = "this_is_another_long_random_secret"
 
 # Database (sqlite for simplicity). Use a real DB in production.
-SQLALCHEMY_DATABASE_URI = "sqlite:///./idoctor.db"
+# Use absolute path so it works both locally and in Docker
+db_path = os.path.join(os.path.dirname(__file__), "idoctor.db")
+SQLALCHEMY_DATABASE_URI = f"sqlite:///{db_path}"
 
 # Model file path (adjust to where you store the .pth)
 MODEL_PATH = "/home/yourusername/your_project/model.pth"

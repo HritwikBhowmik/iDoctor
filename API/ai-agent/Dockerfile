@@ -9,4 +9,4 @@ COPY . .
 
 EXPOSE 5665
 
-CMD ["gunicorn", "-w", "2", "-b", "0.0.0.0:5665", "wsgi:app"]
+CMD ["gunicorn", "-w", "2", "-b", "0.0.0.0:5665", "--timeout", "120", "--access-logfile", "-", "wsgi:application"]
