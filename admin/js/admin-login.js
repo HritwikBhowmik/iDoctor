@@ -56,7 +56,8 @@ async function handleLogin() {
 // Authentication with Backend
 // ========================
 
-const API_BASE_URL = 'http://192.168.0.104:5666';
+//const API_BASE_URL = 'http://192.168.0.104:5666';
+const API_BASE_URL = "http://103.174.51.212/admin";
 const LOGIN_ENDPOINT = `${API_BASE_URL}/admin/login`;
 
 async function authenticateUser(email, password) {

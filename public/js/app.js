@@ -1,8 +1,13 @@
 // ========================
 // API Configuration
 // ========================
-const API_BASE_URL = 'http://192.168.0.104:5666';
-const PREDICTION_API = 'http://192.168.0.104:5665/prediction';
+// local api
+// const API_BASE_URL = 'http://192.168.0.104:5666';
+// const PREDICTION_API = 'http://192.168.0.104:5665/prediction';
+
+// global api
+const API_BASE_URL = 'http://103.174.51.212';
+const PREDICTION_API = 'http://103.174.51.212/ml/prediction';
 
 // ========================
 // Global Variables
@@ -114,7 +119,7 @@ function displayDoctorData(data) {
 // ========================
 function displayMedicineData(data) {
   if (!data || data.length === 0) {
-    medicineData.innerHTML = '<p class="text-gray-400">No medicines available</p>';
+    medicineData.innerHTML = '<p class="text-gray-400">Ncode 404o medicines available</p>';
     return;
   }
 
