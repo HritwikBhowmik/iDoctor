@@ -3,7 +3,7 @@
 //const API_BASE_URL = "http://192.168.0.104:5666";
 
 // global
-const API_BASE_URL = "http://103.174.51.212/admin";
+const API_BASE_URL = "http://103.174.51.212:5666";
 
 let editId = null;
 
