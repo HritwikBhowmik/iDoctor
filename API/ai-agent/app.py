@@ -49,5 +49,5 @@ def APICall():
     return jsonify({"prediction": str(pred), "probability": round(prob, 2)})
 
 
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5665, debug=False)
+# if __name__ == '__main__':
+#     app.run(host='0.0.0.0', port=5665, debug=False)

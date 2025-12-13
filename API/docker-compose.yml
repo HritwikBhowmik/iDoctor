@@ -1,0 +1,27 @@
+version: "3.9"
+
+services:
+  ai-agent:
+    build: ./ai-agent
+    container_name: ai-agent
+    restart: always
+    ports:
+      - "5665:5665"
+
+  db-agent:
+    build: ./db-agent
+    container_name: db-agent
+    restart: always
+    ports:
+      - "5666:5666"
+
+  nginx:
+    image: nginx:latest
+    container_name: nginx
+    ports:
+      - "5667:5667"
+    volumes:
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
+    depends_on:
+      - ai-agent
+      - db-agent
