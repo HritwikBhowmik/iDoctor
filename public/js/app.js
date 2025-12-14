@@ -6,8 +6,8 @@
 // const PREDICTION_API = 'http://192.168.0.104:5665/prediction';
 
 // global api
-const API_BASE_URL = 'https://shimmery-unusuriously-jeff.ngrok-free.dev';
-const PREDICTION_API = 'https://shimmery-unusuriously-jeff.ngrok-free.dev/prediction';
+const API_BASE_URL = 'https://103.174.51.212:5666';
+const PREDICTION_API = 'https://103.174.51.212/ai-agent/prediction';
 
 // ========================
 // Global Variables
