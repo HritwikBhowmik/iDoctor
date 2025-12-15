@@ -6,8 +6,8 @@
 // const PREDICTION_API = 'http://192.168.0.104:5665/prediction';
 
 // global api
-const API_BASE_URL = 'https://103.174.51.212:5666';
-const PREDICTION_API = 'https://103.174.51.212/ai-agent/prediction';
+const API_BASE_URL = 'https://shimmery-unusuriously-jeff.ngrok-free.dev/db-agent';
+const PREDICTION_API = 'https://shimmery-unusuriously-jeff.ngrok-free.dev/ai-agent/prediction';
 
 // ========================
 // Global Variables
@@ -32,6 +32,7 @@ const llmData = document.getElementById("llmData");
 async function makeAPIRequest(endpoint, options = {}) {
   const headers = {
     'Content-Type': 'application/json',
+    'ngrok-skip-browser-warning': 'true', // go bypass ngrok warning
     ...options.headers
   };
 
