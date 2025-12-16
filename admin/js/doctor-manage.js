@@ -3,7 +3,7 @@
 // const API_BASE_URL = "http://192.168.0.104:5666";
 
 // global
-const API_BASE_URL = "http://103.174.51.212:5666";
+const API_BASE_URL = "https://shimmery-unusuriously-jeff.ngrok-free.dev/db-agent";
 
 let editId = null;
 
@@ -24,7 +24,8 @@ async function loadDoctors() {
         const res = await fetch(`${API_BASE_URL}/doctors`, {
             headers: { 
                 "Authorization": `Bearer ${getToken()}`,
-                "Content-Type": "application/json"
+                "Content-Type": "application/json",
+                'ngrok-skip-browser-warning': 'true',
             }
         });
 
