@@ -522,7 +522,7 @@ pip install torch torchvision torchaudio --index-url https://download.pytorch.or
 ### Model Loading Error
 Ensure the model weights file exists:
 ```bash
-ls -la API/ai-agent/model_5*
+ls -la API/ai-agent/model_effb3*
 ```
 
 ---
@@ -530,33 +530,10 @@ ls -la API/ai-agent/model_5*
 ## Performance Metrics
 
 ### Model Performance
-- **Training Accuracy**: 99.4%
+- **Training Accuracy**: 93.4%
 - **Test Accuracy**: 89.3%
 - **Architecture**: EfficientNet-B3
 - **Inference Time**: ~200-500ms per image
-
-### System Performance
-- **AI Service Response Time**: <1 second
-- **Database Query Response**: <100ms
-- **Concurrent Users**: Scales with container replicas
-
----
-
-## Contributing
-
-We welcome contributions! Please follow these steps:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit changes (`git commit -m 'Add amazing feature'`)
-4. Push to branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-### Code Style
-- Follow PEP 8 for Python code
-- Use meaningful variable names
-- Add docstrings for functions
-- Keep functions focused and modular
 
 ---
 
@@ -568,45 +545,14 @@ This project is licensed under the [MIT License](LICENSE) - see the LICENSE file
 
 ## Contact & Support
 
-- **Issues**: Report bugs via GitHub Issues
-- **Discussions**: Join GitHub Discussions for questions
-- **Email**: your-email@example.com
+- **Email**: hbhritwik420@gmail.com
 
 ---
 
-## Acknowledgments
-
-- EfficientNet authors for the model architecture
-- Flask community for the web framework
-- PyTorch team for the deep learning framework
-- Medical imaging datasets for model training
-
----
-
-**Last Updated**: January 2026  
-**Version**: 1.0.0
-
----
-
-## Roadmap
-
-### v1.1 (Planned)
-- [ ] Mobile app support
-- [ ] Multi-language support
-- [ ] Advanced analytics dashboard
-- [ ] Appointment scheduling
-
-### v2.0 (Future)
-- [ ] Integration with hospital records
-- [ ] Telemedicine capabilities
-- [ ] AI-assisted prescription generation
-- [ ] Real-time collaboration features
-
----
 
 <div align="center">
 
-**Made with ❤️ for better healthcare**
+**Made with ❤️**
 
 [⬆ back to top](#idoctor-)
 
